@@ -2,6 +2,7 @@ import { DefaultUi, Player, Youtube } from "@vime/react"
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning, Image } from "phosphor-react"
 import { useGetLessonBySlugQuery } from "../graphql/generated"
 import { Loading } from "./Loading"
+import { Footer } from "./Footer"
 
 import '@vime/core/themes/default.css'
 
@@ -148,6 +149,10 @@ export function Video(props: VideoProps) {
                 
                 </div>
 
+            </div>
+
+            <div className="mx-6">
+                <Footer />
             </div>
 
         </div>

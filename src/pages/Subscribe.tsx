@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { useCreateSubscriberMutation } from "../graphql/generated"
 
 import { Logo } from "../components/Logo"
+import { Footer } from "../components/Footer"
 import CodeMockup from '../assets/code-mockup.png'
 import ReactjsIcon from '../assets/reactjs-icon.png'
 
@@ -84,6 +85,10 @@ export function Subscribe() {
            
             <img src={ReactjsIcon} className="absolute"  alt="" />
             <img src={CodeMockup} className="mt-10" alt="" />
+
+            <div className="w-full px-6 bg-gray-900">
+                <Footer />
+            </div>
         
         </div>
     )
