@@ -19,15 +19,23 @@ export function Lesson(props: LessonPros) {
     const isActiveLesson = slug === props.slug;
     
     return (
-        <Link to={`/event/lesson/${props.slug}`} className="group">
+        <Link 
+            to={`/event/lesson/${props.slug}`} 
+            onClick={( event ) => { if (!isLessonAvailable) {event.preventDefault()} }} 
+            className={classNames("group",{
+                'cursor-not-allowed': !isLessonAvailable,
+                'opacity-40': !isLessonAvailable
+            })}
+        >
 
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>
 
             <div 
-                className={classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
+                className={classNames('rounded border border-gray-500 p-4 mt-2', {
                     'bg-green-500' : isActiveLesson,
+                    'group-hover:border-green-500': isLessonAvailable
                 })}
             >
 
@@ -53,7 +61,7 @@ export function Lesson(props: LessonPros) {
                         <span className={classNames("text-xs rounded py-[0.125rem] px-2 text-red border font-bold bg-red-600", {
                             'border-red-600': !isActiveLesson,
                             'text-red-600': isActiveLesson,
-                            'bg-white' : isActiveLesson,
+                            'bg-white' : isActiveLesson
                         })}> LIVE
                         </span>  
                     :
