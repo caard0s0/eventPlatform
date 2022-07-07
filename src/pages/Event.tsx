@@ -7,7 +7,7 @@ export function Event() {
     const { slug } = useParams<{ slug: string}>()
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen pt-[4.6875rem]">
 
             <Header />
 
@@ -17,7 +17,12 @@ export function Event() {
                     ? <Video lessonSlug={slug}/> 
                     : <div className="flex-1" /> 
                 }
-                <SideBar />
+
+                <div className="hidden md:flex">
+
+                    <SideBar />
+
+                </div>
 
             </main>
 
