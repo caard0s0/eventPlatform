@@ -30,9 +30,9 @@ export function Subscribe() {
     }
 
     return (
-        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+        <div className="flex flex-col items-center min-h-screen bg-blur bg-cover bg-no-repeat">
             
-            <div className="w-full sm:max-w-[400px] lg:max-w-[1100px] lg:flex items-center justify-between mt-20 mx-auto">
+            <div className="lg:flex items-center justify-between mt-20 mx-auto w-full sm:max-w-[400px] lg:max-w-[1100px]">
                 
                 <div className="flex flex-col xs:items-center lg:items-start xs:text-center lg:text-left max-w-[640px]">
 
@@ -48,9 +48,9 @@ export function Subscribe() {
 
                 </div>
 
-                <div className="mt-6 p-8 bg-gray-700 border border-gray-500 rounded z-10 relative">
+                <div className="mt-6 p-8 rounded z-10 relative bg-gray-700 border border-gray-500">
                     
-                    <strong className="xs:text-lg md:text-xl lg:text-2xl mb-6 block">
+                    <strong className=" block xs:text-lg md:text-xl lg:text-2xl mb-6">
                         Sign up for free
                     </strong>
 
@@ -72,7 +72,7 @@ export function Subscribe() {
                         <button 
                             type="submit"
                             disabled={loading}
-                            className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                            className="uppercase font-bold text-sm py-4 mt-4 rounded bg-green-500 hover:bg-green-700 transition-colors disabled:opacity-50"
                         >
                             Secure my spot
                         </button>
@@ -83,8 +83,17 @@ export function Subscribe() {
             
             </div>
            
-            <img src={ReactjsIcon} className="absolute"  alt="React Icon" />
-            <img src={CodeMockup} className="mt-10" alt="Code Mockup" />
+            <img 
+                src={ReactjsIcon} 
+                className="absolute"  
+                alt="React Icon" 
+            />
+
+            <img 
+                src={CodeMockup} 
+                className="mt-10" 
+                alt="Code Mockup" 
+            />
 
             <div className="w-full px-6 bg-gray-900">
                 <Footer />

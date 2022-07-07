@@ -5,9 +5,9 @@ export function SideBar() {
     const { data } = useGetLessonsQuery()
 
     return (
-        <aside className="xs:w-full md:w-[21.75rem] bg-gray-700 p-6 mx-auto lg:border-l border-gray-600">
+        <aside className="xs:w-full md:w-[21.75rem] p-6 mx-auto lg:border-l bg-gray-700 border-gray-600">
             
-            <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
+            <span className="block text-2xl pb-6 mb-6 border-b font-bold border-gray-500">
                 Class Schedules
             </span>
 

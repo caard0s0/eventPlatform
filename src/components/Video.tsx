@@ -51,7 +51,7 @@ export function Video(props: VideoProps) {
                             {data.lesson.title}
                         </h1>
 
-                        <p className="xs:text-sm md:text-base mt-4 text-gray-200 leading-relaxed">
+                        <p className="xs:text-sm md:text-base mt-4 leading-relaxed text-gray-200">
                             {data.lesson.description}
                         </p>
 
@@ -83,25 +83,41 @@ export function Video(props: VideoProps) {
 
                     <div className="flex flex-col gap-4">
 
-                        <a href="" className="p-4 xs:mt-6 lg:m-0 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+                        <a 
+                            href="https://github.com/caard0s0" 
+                            target="_blank" 
+                            className="flex items-center justify-center font-bold uppercase text-sm p-4 xs:mt-6 lg:m-0 bg-green-500 rounded gap-2 hover:bg-green-700 transition-colors"
+                        >
+
                             <DiscordLogo size={24} />
                             Discord Community
+
                         </a>
 
-                        <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+                        <a 
+                            href="https://github.com/caard0s0" 
+                            target="_blank" 
+                            className="flex items-center justify-center font-bold uppercase text-sm text-blue-500 border border-blue-500 rounded gap-2 p-4 hover:bg-blue-500 hover:text-gray-900 transition-colors"
+                        >
+
                             <Lightning size={24} />
                             Access the Challenge
+
                         </a>
 
                     </div>
 
                 </div>
 
-                <div className="gap-8 mt-20 grid lg:grid-cols-2">
+                <div className="grid lg:grid-cols-2 gap-8 mt-20">
 
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:bg-gray-600 border-2 border-green-500 hover:-translate-y-2 border-opacity-0 hover:border-opacity-100 transition-all duration-500 ease-in-out">
+                    <a 
+                        href="https://github.com/caard0s0" 
+                        target="_blank"
+                        className="flex items-stretch justify-between rounded overflow-hidden gap-6 bg-gray-700 hover:bg-gray-600 border-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:-translate-y-2 transition-all duration-500 ease-in-out"
+                    >
                         
-                        <div className="bg-green-700 h-full xs:p-4 lg:p-6 flex items-center">
+                        <div className="flex items-center h-full xs:p-4 lg:p-6 bg-green-700">
                             <FileArrowDown size={40} />
                         </div>
 
@@ -123,9 +139,13 @@ export function Video(props: VideoProps) {
 
                     </a>
 
-                    <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:bg-gray-600 border-2 border-green-500 hover:-translate-y-2 border-opacity-0 hover:border-opacity-100 transition-all duration-500 ease-in-out">
+                    <a 
+                        href="https://github.com/caard0s0" 
+                        target="_blank" 
+                        className="flex items-stretch justify-between rounded overflow-hidden gap-6 bg-gray-700 hover:bg-gray-600 border-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:-translate-y-2 transition-all duration-500 ease-in-out"
+                    >
                         
-                        <div className="bg-green-700 h-full xs:p-4 lg:p-6 flex items-center">
+                        <div className="flex items-center h-full xs:p-4 lg:p-6 bg-green-700">
                             <Image size={40} />
                         </div>
 

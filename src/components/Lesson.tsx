@@ -1,6 +1,7 @@
 import { CheckCircle, Lock } from 'phosphor-react'
 import { isPast, format} from 'date-fns'
 import { Link, useParams } from 'react-router-dom'
+
 import classNames from 'classnames'
 
 interface LessonPros {
