@@ -25,7 +25,7 @@ export function Subscribe() {
             }
         })
 
-        navigate('/event')
+        navigate('/event/lesson/starting-in-reactjs-in-2022')
         
     }
 
